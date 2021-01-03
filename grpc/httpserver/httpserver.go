@@ -1,4 +1,4 @@
-package apigatewayserver
+package httpserver
 
 import (
 	"fmt"
