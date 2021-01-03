@@ -43,9 +43,9 @@ func (s *HttpServer) Handler(w http.ResponseWriter, request *http.Request) {
 	}
 
 	response, err := s.Invoker.Invoke(request.Context(), invoker.GrpcRequest{
-		path:        path,
-		serviceName: serviceName,
-		body:        body,
+		Path:        path,
+		ServiceName: serviceName,
+		Body:        body,
 	})
 
 	if err != nil {
