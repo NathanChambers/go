@@ -18,7 +18,7 @@ type ApiGatewayServer struct {
 	*invoker.Invoker
 }
 
-func NewApiGatewayServer() *ApiGatewayServer {
+func NewServer() *ApiGatewayServer {
 	return &ApiGatewayServer{
 		Invoker: invoker.NewInvoker(),
 	}
