@@ -1,3 +1,3 @@
-module github.com/NathanChambers/aws-lambda-go
+module github.com/NathanChambers/go
 
 go 1.13
