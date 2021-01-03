@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/NathanChambers/go/grpc/invoker"
 	"github.com/aws/aws-lambda-go/events"
-	"github.com/nathanchambers/go/grpc/invoker"
 )
 
 const (

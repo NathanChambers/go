@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/nathanchambers/go/grpc/invoker"
+	"github.com/NathanChambers/go/grpc/invoker"
 )
 
 const (
