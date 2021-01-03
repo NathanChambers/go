@@ -15,7 +15,7 @@ const (
 )
 
 type ApiGatewayServer struct {
-	invoker.Invoker
+	*invoker.Invoker
 }
 
 func NewApiGatewayServer() *ApiGatewayServer {
@@ -36,9 +36,9 @@ func (s *ApiGatewayServer) Handler(ctx context.Context, request events.APIGatewa
 	}
 
 	response, err := s.Invoker.Invoke(ctx, invoker.GrpcRequest{
-		path:        path,
-		serviceName: serviceName,
-		body:        []byte(request.Body),
+		Path:        path,
+		ServiceName: serviceName,
+		Body:        []byte(request.Body),
 	})
 
 	if err != nil {

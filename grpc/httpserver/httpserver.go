@@ -14,7 +14,7 @@ const (
 )
 
 type HttpServer struct {
-	invoker.Invoker
+	*invoker.Invoker
 }
 
 func NewHttpServer() *HttpServer {
